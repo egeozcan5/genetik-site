@@ -17,6 +17,7 @@ kategori = st.sidebar.selectbox(
 if kategori == ("Kategori Seçin" if dil == "Türkçe" else "Select Category"):
     st.title("Genetik Bilgi Rehberi'ne Hoş Geldiniz!" if dil == "Türkçe" else "Welcome to the Genetic Information Guide!")
     st.write("Sol menüden bir hastalık seçerek başlayabilirsiniz." if dil == "Türkçe" else "Start by selecting a disease from the sidebar.")
+    st.write("Bu site deneme sürümüdür." if dil == "Türkçe" else "This is a test version of the site.")
 elif kategori == ("Kanser" if dil == "Türkçe" else "Cancer"):
     kansertut = st.sidebar.selectbox(
         "Bir kanser türü seçin" if dil == "Türkçe" else "Select a cancer type",
